@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ThriveOS — The AI Browser That Works For You</title>
+  <meta name="description" content="ThriveOS is the world's first agentic AI browser that learns who you are, understands your goals, and acts on your behalf — automatically." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">Thrive<span>OS</span></a>
+      <ul class="nav-links">
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#vision">Vision</a></li>
+        <li><a href="#team">Team</a></li>
+      </ul>
+      <a href="#waitlist" class="btn btn-nav">Join Waitlist</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#how-it-works">How It Works</a>
+      <a href="#features">Features</a>
+      <a href="#vision">Vision</a>
+      <a href="#team">Team</a>
+      <a href="#waitlist" class="btn btn-nav">Join Waitlist</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        Redefining the Internet — one intent at a time
+      </div>
+      <h1 class="hero-title">
+        The Browser That<br />
+        <span class="gradient-text">Does Things</span><br />
+        For You
+      </h1>
+      <p class="hero-sub">
+        ThriveOS is an agentic AI browser and personal operating system that learns who you are,
+        understands your goals, and autonomously executes tasks — so you can focus on what matters most.
+      </p>
+      <div class="hero-cta">
+        <a href="#waitlist" class="btn btn-primary">Get Early Access</a>
+        <a href="#how-it-works" class="btn btn-ghost">See How It Works →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">10×</span>
+          <span class="stat-label">Productivity Multiplier</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">$4T</span>
+          <span class="stat-label">Addressable Market</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">1B+</span>
+          <span class="stat-label">Target Users by 2030</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="browser-mockup">
+        <div class="browser-bar">
+          <div class="browser-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="browser-url">thriveos.ai — your personal AI workspace</div>
+          <div class="browser-actions">
+            <div class="action-dot"></div>
+          </div>
+        </div>
+        <div class="browser-content">
+          <div class="ai-sidebar">
+            <div class="ai-avatar">
+              <div class="ai-pulse"></div>
+              <span>T</span>
+            </div>
+            <p class="ai-greeting">Good morning, Alex.</p>
+            <p class="ai-message">I've reviewed your calendar and goals. Here's what I'm handling for you today:</p>
+            <div class="task-list">
+              <div class="task-item done">
+                <span class="task-check">✓</span>
+                <span>Drafted 3 investor outreach emails</span>
+              </div>
+              <div class="task-item done">
+                <span class="task-check">✓</span>
+                <span>Summarized 47 unread newsletters</span>
+              </div>
+              <div class="task-item active">
+                <span class="task-spinner"></span>
+                <span>Researching competitor pricing...</span>
+              </div>
+              <div class="task-item pending">
+                <span class="task-dot"></span>
+                <span>Prepare weekly report for team</span>
+              </div>
+            </div>
+          </div>
+          <div class="browser-main">
+            <div class="workflow-card">
+              <div class="wf-header">
+                <span class="wf-tag">AI Workflow Active</span>
+                <span class="wf-time">Auto-generated for you</span>
+              </div>
+              <h3>Launch Campaign: Q2 Growth</h3>
+              <div class="progress-steps">
+                <div class="step completed">Research</div>
+                <div class="step-line completed"></div>
+                <div class="step completed">Draft</div>
+                <div class="step-line active"></div>
+                <div class="step active">Review</div>
+                <div class="step-line"></div>
+                <div class="step">Launch</div>
+              </div>
+            </div>
+            <div class="suggestion-cards">
+              <div class="sug-card">
+                <span class="sug-icon">💡</span>
+                <div>
+                  <p class="sug-title">Smart Suggestion</p>
+                  <p class="sug-text">Your top prospect just raised funding. Want me to send a personalized note?</p>
+                </div>
+                <button class="sug-btn">Go</button>
+              </div>
+              <div class="sug-card">
+                <span class="sug-icon">📊</span>
+                <div>
+                  <p class="sug-title">Insight Ready</p>
+                  <p class="sug-text">I found 3 pricing strategies that match your market position.</p>
+                </div>
+                <button class="sug-btn">View</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="problem">
+    <div class="container">
+      <div class="section-label">The Problem</div>
+      <h2 class="section-title">The Internet Demands Your Attention.<br /><span class="gradient-text">ThriveOS Gives It Back.</span></h2>
+      <div class="problem-grid">
+        <div class="problem-card">
+          <div class="problem-icon">⚡</div>
+          <h3>Tool Overload</h3>
+          <p>The average knowledge worker uses 9+ apps daily. Switching context kills productivity and buries your most important work under noise.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">🔁</div>
+          <h3>Repetitive Busywork</h3>
+          <p>80% of daily tasks — emails, research, scheduling, reporting — are mechanical and predictable. You shouldn't be doing them manually.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">🧩</div>
+          <h3>AI Without Context</h3>
+          <p>Existing AI tools are powerful but disconnected. They don't know your life, your goals, or your workflow. They wait. They don't act.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-label">How It Works</div>
+      <h2 class="section-title">Your AI Concierge,<br /><span class="gradient-text">From Day One</span></h2>
+      <div class="steps">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <div class="step-icon">🤝</div>
+          <h3>Deep Onboarding</h3>
+          <p>ThriveOS begins with a rich conversation. It learns your name, your work, your goals, your habits, your pain points. Like a brilliant new hire who actually listens.</p>
+        </div>
+        <div class="step-connector">
+          <div class="connector-line"></div>
+          <div class="connector-arrow">→</div>
+        </div>
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <div class="step-icon">🧠</div>
+          <h3>Custom Workflow Design</h3>
+          <p>Based on what it knows about you, ThriveOS builds automated workflows tailored to your life and business — and refines them every day as it learns more.</p>
+        </div>
+        <div class="step-connector">
+          <div class="connector-line"></div>
+          <div class="connector-arrow">→</div>
+        </div>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <div class="step-icon">🚀</div>
+          <h3>Agentic Action</h3>
+          <p>ThriveOS doesn't just suggest — it acts. It browses, drafts, researches, schedules, and executes across the web, proactively and autonomously, on your behalf.</p>
+        </div>
+        <div class="step-connector">
+          <div class="connector-line"></div>
+          <div class="connector-arrow">→</div>
+        </div>
+        <div class="step-card">
+          <div class="step-num">04</div>
+          <div class="step-icon">✨</div>
+          <h3>Continuous Growth</h3>
+          <p>Every interaction makes ThriveOS smarter about you. It evolves with your priorities, anticipates your needs, and becomes your most indispensable collaborator.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-label">Capabilities</div>
+      <h2 class="section-title">Not Just a Browser.<br /><span class="gradient-text">An Intelligent Operating System for Your Life.</span></h2>
+      <div class="features-grid">
+        <div class="feature-card feature-large">
+          <div class="feature-icon">🎯</div>
+          <h3>Intent-Driven Browsing</h3>
+          <p>Tell ThriveOS what you need in plain language. It determines the best approach, navigates the web, and returns with results — or handles it entirely on your behalf.</p>
+          <div class="feature-tag">Agentic Browsing</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🗂️</div>
+          <h3>Project Intelligence</h3>
+          <p>ThriveOS tracks your ongoing projects, surfaces blockers, coordinates tasks, and keeps your work moving — without you having to micromanage a system.</p>
+          <div class="feature-tag">Project OS</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💬</div>
+          <h3>Proactive Suggestions</h3>
+          <p>Instead of waiting to be asked, ThriveOS proactively surfaces opportunities, risks, and next steps based on your context and goals.</p>
+          <div class="feature-tag">Ambient Intelligence</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔗</div>
+          <h3>Universal Integration</h3>
+          <p>Connects to your email, calendar, Slack, CRM, docs, and more. ThriveOS becomes the single intelligent layer across every tool you use.</p>
+          <div class="feature-tag">Deep Integration</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h3>Private by Design</h3>
+          <p>Your personal data never trains our models. ThriveOS builds a private, local memory of you that stays yours — always encrypted, always in your control.</p>
+          <div class="feature-tag">Privacy-First</div>
+        </div>
+        <div class="feature-card feature-large feature-right">
+          <div class="feature-icon">🤖</div>
+          <h3>AI Workflows, Auto-Generated</h3>
+          <p>ThriveOS doesn't wait for you to design automation — it identifies repetitive patterns in your work and proposes automations. You approve, it executes. That's it.</p>
+          <div class="feature-tag">Autonomous Automation</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF / COMPARISON -->
+  <section class="comparison">
+    <div class="container">
+      <div class="section-label">Why ThriveOS</div>
+      <h2 class="section-title">Beyond Chatbots.<br /><span class="gradient-text">Beyond Copilots.</span></h2>
+      <p class="section-sub">Every AI tool today is reactive — you prompt, it responds. ThriveOS is the first genuinely proactive AI system that operates on your behalf across the entire web.</p>
+      <div class="compare-table">
+        <div class="compare-header">
+          <div class="compare-col col-feature">Capability</div>
+          <div class="compare-col col-thriveos">ThriveOS</div>
+          <div class="compare-col col-other">ChatGPT / Copilot</div>
+          <div class="compare-col col-other">Traditional Browser</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-col col-feature">Knows who you are</div>
+          <div class="compare-col col-thriveos"><span class="check">✓</span></div>
+          <div class="compare-col col-other"><span class="cross">✗</span></div>
+          <div class="compare-col col-other"><span class="cross">✗</span></div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-col col-feature">Acts autonomously on the web</div>
+          <div class="compare-col col-thriveos"><span class="check">✓</span></div>
+          <div class="compare-col col-other"><span class="cross">✗</span></div>
+          <div class="compare-col col-other"><span class="cross">✗</span></div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-col col-feature">Generates workflows for you</div>
+          <div class="compare-col col-thriveos"><span class="check">✓</span></div>
+          <div class="compare-col col-other"><span class="cross">✗</span></div>
+          <div class="compare-col col-other"><span class="cross">✗</span></div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-col col-feature">Proactive — not just reactive</div>
+          <div class="compare-col col-thriveos"><span class="check">✓</span></div>
+          <div class="compare-col col-other"><span class="cross">✗</span></div>
+          <div class="compare-col col-other"><span class="cross">✗</span></div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-col col-feature">Manages your projects</div>
+          <div class="compare-col col-thriveos"><span class="check">✓</span></div>
+          <div class="compare-col col-other"><span class="partial">~</span></div>
+          <div class="compare-col col-other"><span class="cross">✗</span></div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-col col-feature">Learns and improves daily</div>
+          <div class="compare-col col-thriveos"><span class="check">✓</span></div>
+          <div class="compare-col col-other"><span class="partial">~</span></div>
+          <div class="compare-col col-other"><span class="cross">✗</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISION -->
+  <section class="vision" id="vision">
+    <div class="container">
+      <div class="vision-inner">
+        <div class="vision-text">
+          <div class="section-label">Our Vision</div>
+          <h2 class="section-title">We're Building the<br /><span class="gradient-text">Next Platform Layer</span></h2>
+          <p>The browser was the defining technology of the internet era. It democratized access to information. But information access is no longer the bottleneck — execution is.</p>
+          <p>ThriveOS is the next platform layer: the intelligent operating system for human intent. Just as iOS unlocked the smartphone economy, ThriveOS unlocks the agentic economy — where AI doesn't just answer questions, it gets things done.</p>
+          <p>We're positioned at the intersection of three converging waves: foundation model maturity, browser-level agent capabilities, and mass consumer demand for AI that actually works. The timing has never been better. The market has never been larger.</p>
+          <div class="vision-metrics">
+            <div class="vm">
+              <span class="vm-num">$4T</span>
+              <span class="vm-label">Global productivity software market by 2030</span>
+            </div>
+            <div class="vm">
+              <span class="vm-num">5B</span>
+              <span class="vm-label">Internet users who need better tools</span>
+            </div>
+            <div class="vm">
+              <span class="vm-num">#1</span>
+              <span class="vm-label">Goal: the default way humans use the internet</span>
+            </div>
+          </div>
+        </div>
+        <div class="vision-graphic">
+          <div class="platform-stack">
+            <div class="stack-layer layer-top">
+              <span>ThriveOS</span>
+              <small>Agentic AI Browser</small>
+            </div>
+            <div class="stack-layer layer-mid">
+              <span>Foundation Models</span>
+              <small>GPT-4o · Gemini · Claude</small>
+            </div>
+            <div class="stack-layer layer-low">
+              <span>The Open Web</span>
+              <small>Every website. Every service.</small>
+            </div>
+            <div class="stack-layer layer-base">
+              <span>Your Life & Business</span>
+              <small>Goals · Context · Memory</small>
+            </div>
+            <div class="stack-glow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- USE CASES -->
+  <section class="use-cases">
+    <div class="container">
+      <div class="section-label">Use Cases</div>
+      <h2 class="section-title">One Platform.<br /><span class="gradient-text">Endless Applications.</span></h2>
+      <div class="use-cases-grid">
+        <div class="uc-card">
+          <div class="uc-persona">For Founders</div>
+          <h3>"Research 5 competitors, draft a cold email to our top 20 prospects, and schedule a follow-up for next week."</h3>
+          <p class="uc-result">Done in 4 minutes. Automatically.</p>
+        </div>
+        <div class="uc-card">
+          <div class="uc-persona">For Executives</div>
+          <h3>"Summarize everything I missed while I was traveling and give me a priority list for today."</h3>
+          <p class="uc-result">Briefed in 60 seconds. With full context.</p>
+        </div>
+        <div class="uc-card">
+          <div class="uc-persona">For Freelancers</div>
+          <h3>"Find 10 new client leads matching my ideal customer profile and prepare personalized outreach for each."</h3>
+          <p class="uc-result">Pipeline filled. No hours wasted.</p>
+        </div>
+        <div class="uc-card">
+          <div class="uc-persona">For Students</div>
+          <h3>"Research this topic, pull from multiple sources, and help me build an outline for my thesis chapter."</h3>
+          <p class="uc-result">Deep research, synthesized and structured.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team" id="team">
+    <div class="container">
+      <div class="section-label">The Team</div>
+      <h2 class="section-title">Built by People Who<br /><span class="gradient-text">Think Big</span></h2>
+      <p class="section-sub">ThriveOS is led by a team of entrepreneurs, engineers, and AI researchers who believe the next trillion-dollar platform will be built around human intent — not just information retrieval.</p>
+      <div class="team-values">
+        <div class="value-card">
+          <div class="value-icon">🌍</div>
+          <h3>Audacious Mission</h3>
+          <p>We're not building another productivity app. We're redefining the relationship between humans and the internet.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🔬</div>
+          <h3>Research-Driven</h3>
+          <p>Deep investment in AI agent architecture, memory systems, and human-computer interaction informs every product decision.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🤝</div>
+          <h3>User-Obsessed</h3>
+          <p>Every feature is designed from the inside out — starting with what makes a real person's life meaningfully better.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAITLIST / CTA -->
+  <section class="waitlist" id="waitlist">
+    <div class="container">
+      <div class="waitlist-inner">
+        <div class="waitlist-orb"></div>
+        <div class="section-label">Early Access</div>
+        <h2 class="waitlist-title">Be Among the First to<br /><span class="gradient-text">Experience ThriveOS</span></h2>
+        <p class="waitlist-sub">We're onboarding a select group of early users who want to be at the frontier of what AI can actually do. Join the waitlist and we'll be in touch.</p>
+        <form class="waitlist-form" id="waitlist-form">
+          <div class="form-row">
+            <input type="text" placeholder="Your Name" required class="form-input" />
+            <input type="email" placeholder="Your Email" required class="form-input" />
+            <select class="form-input form-select" required>
+              <option value="" disabled selected>I am a...</option>
+              <option>Founder / CEO</option>
+              <option>Executive / Manager</option>
+              <option>Freelancer / Consultant</option>
+              <option>Student / Researcher</option>
+              <option>Other Professional</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-large">Request Early Access →</button>
+        </form>
+        <p class="waitlist-note">No spam. No credit card. Just early access to the future of how you work.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#" class="logo">Thrive<span>OS</span></a>
+          <p>The agentic AI browser that works for you.</p>
+          <p class="footer-tagline">© 2025 ThriveOS, Inc. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Product</h4>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#features">Features</a>
+            <a href="#waitlist">Early Access</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="#vision">Vision</a>
+            <a href="#team">Team</a>
+            <a href="#">Press</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
