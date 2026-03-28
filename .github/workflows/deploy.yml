@@ -1,0 +1,34 @@
+name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Get Cloudflare Account ID
+        id: cf_account
+        run: |
+          ACCOUNT_ID=$(curl -s -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_API_TOKEN }}" \
+            "https://api.cloudflare.com/client/v4/accounts" \
+            | jq -r '.result[0].id')
+          echo "account_id=$ACCOUNT_ID" >> $GITHUB_OUTPUT
+          echo "Found account: $ACCOUNT_ID"
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ steps.cf_account.outputs.account_id }}
+          projectName: thriveos
+          directory: .
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          wranglerVersion: '3'
