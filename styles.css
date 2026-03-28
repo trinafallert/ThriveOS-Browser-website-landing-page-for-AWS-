@@ -1517,6 +1517,17 @@ body {
 
   .hero-title {
     font-size: clamp(2.5rem, 10vw, 4rem);
+    line-height: 1.18;
+    letter-spacing: -0.02em;
+  }
+
+  .section-title {
+    line-height: 1.22;
+    letter-spacing: -0.015em;
+  }
+
+  .waitlist-title {
+    line-height: 1.22;
   }
 
   .hero-stats {
