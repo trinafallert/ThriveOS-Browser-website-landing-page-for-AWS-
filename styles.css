@@ -74,9 +74,9 @@ body {
 
 .section-title {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.75rem, 5vw, 3rem);
   font-weight: 800;
-  line-height: 1.12;
+  line-height: 1.18;
   letter-spacing: -0.02em;
   color: var(--text);
   margin-bottom: 24px;
@@ -364,10 +364,10 @@ body {
 
 .hero-title {
   font-family: var(--font-display);
-  font-size: clamp(3rem, 8vw, 6rem);
+  font-size: clamp(2.4rem, 9vw, 6rem);
   font-weight: 800;
-  line-height: 1.04;
-  letter-spacing: -0.03em;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
   color: var(--text);
   margin-bottom: 28px;
 }
@@ -1516,18 +1516,21 @@ body {
   }
 
   .hero-title {
-    font-size: clamp(2.5rem, 10vw, 4rem);
-    line-height: 1.18;
-    letter-spacing: -0.02em;
-  }
-
-  .section-title {
-    line-height: 1.22;
+    font-size: clamp(2rem, 11vw, 3.2rem);
+    line-height: 1.15;
     letter-spacing: -0.015em;
   }
 
-  .waitlist-title {
+  .section-title {
+    font-size: clamp(1.6rem, 7vw, 2.4rem);
     line-height: 1.22;
+    letter-spacing: -0.01em;
+  }
+
+  .waitlist-title {
+    font-size: clamp(1.6rem, 7vw, 2.4rem);
+    line-height: 1.22;
+    letter-spacing: -0.01em;
   }
 
   .hero-stats {
